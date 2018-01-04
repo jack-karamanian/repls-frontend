@@ -1,7 +1,7 @@
 import ImageEntry from './types/ImageEntry';
 // import ServerError from './types/ServerError';
 namespace API {
-    const HOST = '35.225.68.251';
+    const HOST = 'backend.repls.io';
     export function startImage(image: string): WebSocket {
         const ws = new WebSocket(`ws://${HOST}/ws?image=${image}`);
         return ws;
